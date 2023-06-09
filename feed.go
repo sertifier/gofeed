@@ -5,6 +5,7 @@ import (
 	"time"
 
 	ext "github.com/mmcdole/gofeed/extensions"
+	"github.com/mmcdole/gofeed/rss"
 )
 
 // Feed is the universal Feed type that atom.Feed
@@ -66,6 +67,7 @@ type Item struct {
 	ITunesExt       *ext.ITunesItemExtension `json:"itunesExt,omitempty"`
 	Extensions      ext.Extensions           `json:"extensions,omitempty"`
 	Custom          map[string]string        `json:"custom,omitempty"`
+	Source          *rss.Source              `json:"source,omitempty"`
 }
 
 // Person is an individual specified in a feed
