@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	ext "github.com/mmcdole/gofeed/extensions"
-	"github.com/mmcdole/gofeed/rss"
+	ext "github.com/sertifier/gofeed/extensions"
+	"github.com/sertifier/gofeed/rss"
 )
 
 // Feed is the universal Feed type that atom.Feed
